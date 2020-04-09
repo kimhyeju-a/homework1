@@ -3,33 +3,93 @@
 <head> 
 	<meta charset="utf-8" /> 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-	<title>Task1</title> 
+	<title>김혜주 Homework 제출</title> 
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+	<style>
+		body {
+			text-align: center;
+			font-family: 'Noto Sans KR';
+		}
+		.top{
+			border : 1px solid gray;
+		    padding-bottom: 20px;
+		}
+		.title{
+			padding-top: 50px;
+			padding-bottom: 20px;
+		}
+		.link.active {
+			background-color: yellow;
+		}
+		/* .red .active a,
+		.red .active a:hover {
+			background-color: rgb(182, 182, 182);
+		} */
+		
+	</style>
 </head> 
 <body> 
-	<h1>HomeWork 1 - Git 사용법</h1>
+	<div class ="top">
+		<h1 class = "title">HomeWork : Git 사용법 (0406~0407)</h1>
+		<a type="button" class="btn btn-info" href="https://github.com/kimhyeju-a">김혜주의 Github 바로가기</a>
+	</div>
+	<div class = "row" style="padding-top: 20px;">	
+		<div class = "col-3">
+			<ul class="nav flex-column nav-pills gray nav-tabs" id="myTab" role="tablist">
+				<li class="nav-item">
+				<a style="color: black; border-color: white;" class="nav-link btn btn-outline-secondary active " id="home-tab" data-toggle="tab" href="#homework1" role="tab" aria-controls="home" aria-selected="true" type="buttom">HomeWork1 - 0406</a>
+				</li>
+				<li class="nav-item">
+				<a style="color: black; border-color: white;" class="nav-link btn btn-outline-secondary" type="buttom" id="profile-tab" data-toggle="tab" href="#homework2" role="tab" aria-controls="profile" aria-selected="false">HomeWork2 - 0407</a>
+				</li>
+			</ul>
+		</div>
+		<div class = "col-9">
+			<div class="tab-content" id="myTabContent">
+				<div class="tab-pane fade show active" id="homework1" role="tabpanel" aria-labelledby="home-tab">						
+					<a href="https://www.youtube.com/embed/skBSuQ0Kk1A" type="button" class="btn btn-outline-danger">Homework1 - 0406 과제 동영상 바로가기</a>					
+					<br>
+					<br>
+					<iframe width="80%" height="450" src="https://www.youtube.com/embed/skBSuQ0Kk1A">
+					</iframe>
+					<br>
+					<hr width="80%" size="5" color="pink">
+					<table borad="1" style="width:70%; margin: auto">
+						<thead style="background-color:#CEECF5">
+							<th>Repository란</th>
+							<th>branch란</th>
+							<th>commit이란</th>
+						</thead>
+						<tr>
+							<td>파일 등을 저장하는 일종의 저장소로 저장소의 종류는 <b>Remote Repository(원격 저장소)</b>와 <b>Local Repository(개인 저장소)</b>가 있다. </td>
+							<td>브랜치는 특정 커밋으로부터 분기되는 포인터를 말하는 것으로, 각 개발자들이 개발을진행하고 있는 환경 또는 흐름을 말한다. <br>여러 명이 같은 코드를 공유하며 협업하는 상황이 왔을 때, 어느 개발자가 어떤 커밋을 추가했는지 구분이 할 수 있도록 사용된다. </td>
+							<td>프로젝트의 파일 및 폴더의 추가/변경 사항을 알려준다. <br>버그 수정, 기능 추가 등 특별한 의미가 있는 업데이트를 작업 별로 구분해서 각각 커밋하면 나중에 이력을 보고 특정 변경 내용을 찾기 쉽다. </td>
+						</tr>
+					</table>
+				</div>
+				<div class="tab-pane fade" id="homework2" role="tabpanel" aria-labelledby="profile-tab">
+					<h4>과제 설명</h4>
+					<p>SourceTree app을 활용하여 Git 기본 사용 방법 동영상 작성 <br> branch생성, 삭제, checkout, commit, clone, push, pull 진행</p>
+					<a href="https://www.youtube.com/embed/MtFen0f9Itg" type="button" class="btn btn-outline-danger">Homework1 - 0407 과제 동영상 바로가기</a>					
+					<br>
+					<br>
+					<iframe width="80%" height="450" src="https://www.youtube.com/embed/MtFen0f9Itg">
+					</iframe>
+					<br>
+					
+				</div>
+			</div>
+		</div>
+	</div>
 	<hr width="100%">
-	<a href="https://www.youtube.com/embed/skBSuQ0Kk1A" style="font-size:1.17em; font-weight:bold; color:black; text-decoration:none;"> 과제동영상 바로가기 </a>
-	<br>
-	<br>
-	<iframe width="80%" height="450" src="https://www.youtube.com/embed/skBSuQ0Kk1A">
-	</iframe>
-	<br>
-	<hr width="80%" size="5" color="pink">
-	<h3> 귀여운 고먐미! </h3>
-	<img src = "git.png" /> 
-	<hr width="80%" size="5" color="pink">
-	<table borad="1" style="width:70%;">
-		<thead style="background-color:#CEECF5">
-			<th>Repository란</th>
-			<th>branch란</th>
-			<th>commit이란</th>
-		</thead>
-		<tr>
-			<td>파일 등을 저장하는 일종의 저장소로 저장소의 종류는 <b>Remote Repository(원격 저장소)</b>와 <b>Local Repository(개인 저장소)</b>가 있다. </td>
-			<td>브랜치는 특정 커밋으로부터 분기되는 포인터를 말하는 것으로, 각 개발자들이 개발을진행하고 있는 환경 또는 흐름을 말한다. <br>여러 명이 같은 코드를 공유하며 협업하는 상황이 왔을 때, 어느 개발자가 어떤 커밋을 추가했는지 구분이 할 수 있도록 사용된다. </td>
-			<td>프로젝트의 파일 및 폴더의 추가/변경 사항을 알려준다. <br>버그 수정, 기능 추가 등 특별한 의미가 있는 업데이트를 작업 별로 구분해서 각각 커밋하면 나중에 이력을 보고 특정 변경 내용을 찾기 쉽다. </td>
-		</tr>
-	</table>
+	
 </body> 
 </html>
