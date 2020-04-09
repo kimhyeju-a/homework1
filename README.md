@@ -14,4 +14,7 @@
 
 
 #### HomeWork1 동영상 링크
-+ https://kimhyeju-a.github.io/homework1/
++ https://youtu.be/skBSuQ0Kk1A
+
+#### Homwork2 동영상 링크
++ https://youtu.be/MtFen0f9Itg
